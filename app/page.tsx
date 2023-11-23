@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="hero min-h-screen bg-base-100">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="w-full md:w-1/2 lg:w-1/3 max-w-sm ">
+        <div className="w-full md:w-1/2 lg:w-1/3">
           <Image
             src="/background.png"
             alt="Background image of a black cat on a computer."
