@@ -7,15 +7,22 @@ import { Viewport } from "next";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  viewportFit: "contain",
+  viewportFit: "cover",
 };
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "KehoeDev",
+  title: "Kehoe Tech Dev",
   description:
     "Portfolio of Eric Kehoe, PhD. Mathematician - Data Scientist - Full Stack Developer.",
+  authors: [{ name: "Eric Kehoe", url: "https://kehoe-tech.dev" }],
+  keywords: [
+    "Data Science",
+    "Full Stack Development",
+    "Mathematics",
+    "Portfolio",
+  ],
 };
 
 export default function RootLayout({
