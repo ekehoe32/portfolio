@@ -31,7 +31,8 @@ export default function Navbar({ children }: NavbarProps) {
               <CubeScene />
             </label>
           </div>
-          <div className="flex-1 px-2 mx-2 gap-2">
+
+          <Link className="flex-1 px-2 mx-2 gap-2" href="/">
             <p className=" text-xl">KehoeTech</p>
             <Image
               className="w-6"
@@ -40,7 +41,7 @@ export default function Navbar({ children }: NavbarProps) {
               height={100}
               alt="kehoe logo"
             />
-          </div>
+          </Link>
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}

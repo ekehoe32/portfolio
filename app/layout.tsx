@@ -4,6 +4,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { Viewport } from "next";
 import Navbar from "./ui/navbar";
+import Footer from "./ui/footer";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -35,7 +36,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
-        <Navbar>{children}</Navbar>
+        <Navbar>
+          {children}
+          <Footer />
+        </Navbar>
       </body>
       <Analytics />
     </html>
