@@ -5,13 +5,16 @@ export default function Home() {
   return (
     <main className="hero min-h-screen bg-base-100">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <Image
-          src="/background.png"
-          className="max-w-sm rounded-lg shadow-2xl"
-          alt="Background image of a black cat on a computer."
-          width={500}
-          height={500}
-        />
+        <div className="w-full md:w-1/2 lg:w-1/3 max-w-sm ">
+          <Image
+            src="/background.png"
+            alt="Background image of a black cat on a computer."
+            className="rounded-lg shadow-2xl"
+            width={500}
+            height={500}
+            layout="responsive"
+          />
+        </div>
         <div>
           <article className="prose lg:prose-xl mb-4">
             <h1>Who am I?</h1>
