@@ -37,9 +37,6 @@ export default function Home() {
           <button className="btn btn-primary">Explore</button>
         </div>
       </div>
-      <div className="absolute left-0 top-0 w-24 h-24">
-        <CubeScene />
-      </div>
     </main>
   );
 }
