@@ -1,5 +1,4 @@
 import Image from "next/image";
-import CubeScene from "./ui/cube-scene";
 
 export default function Home() {
   return (

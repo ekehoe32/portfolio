@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@react-three/fiber": "^8.15.11",
+    "@types/change-case": "^2.3.1",
     "@types/three": "^0.158.3",
     "@vercel/analytics": "^1.1.1",
+    "change-case": "^5.2.0",
     "daisyui": "latest",
     "next": "14.0.3",
     "react": "^18",

@@ -1,40 +1,72 @@
 import CubeScene from "@/app/ui/cube-scene";
+import Link from "next/link";
+import * as changeCase from "change-case";
+import Image from "next/image";
 
-export default function Navbar() {
+type NavbarProps = {
+  children: React.ReactNode;
+};
+
+const links = [
+  { name: "Math", href: "/math" },
+  { name: "Data Science", href: "/data-science" },
+  { name: "Software Development", href: "/software-dev" },
+  { name: "Music", href: "/music" },
+  { name: "Contact", href: "/contact" },
+];
+
+export default function Navbar({ children }: NavbarProps) {
   return (
-    <div className="navbar bg-base-100">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost btn-circle">
-            <CubeScene />
-          </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li>
-              <a>Homepage</a>
-            </li>
-            <li>
-              <a>Portfolio</a>
-            </li>
-            <li>
-              <a>About</a>
-            </li>
-          </ul>
+    <div className="drawer">
+      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content flex flex-col">
+        {/* Navbar */}
+        <div className="w-full navbar bg-base-300">
+          <div className="flex-none lg:hidden">
+            <label
+              htmlFor="my-drawer-3"
+              aria-label="open sidebar"
+              className="btn btn-square btn-ghost"
+            >
+              <CubeScene />
+            </label>
+          </div>
+          <div className="flex-1 px-2 mx-2 gap-2">
+            <p className=" text-xl">KehoeTech</p>
+            <Image
+              className="w-6"
+              src="/kehoe.png"
+              width={100}
+              height={100}
+              alt="kehoe logo"
+            />
+          </div>
+          <div className="flex-none hidden lg:block">
+            <ul className="menu menu-horizontal">
+              {/* Navbar menu content here */}
+              {links.map((link) => (
+                <li key={`link-${changeCase.kebabCase(link.name)}`}>
+                  <Link href={link.href}>{link.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
+        {children}
       </div>
-      <div className="navbar-center">
-        <a className="btn btn-ghost text-xl">KehoeTech</a>
-      </div>
-      <div className="navbar-end">
-        <div className="form-control">
-          <input
-            type="text"
-            placeholder="Search"
-            className="input input-bordered w-36 md:w-auto mr-1"
-          />
-        </div>
+      <div className="drawer-side">
+        <label
+          htmlFor="my-drawer-3"
+          aria-label="close sidebar"
+          className="drawer-overlay"
+        ></label>
+        <ul className="menu p-4 w-80 min-h-full bg-base-200">
+          {links.map((link) => (
+            <li key={`link-${changeCase.kebabCase(link.name)}`}>
+              <Link href={link.href}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
