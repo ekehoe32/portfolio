@@ -16,7 +16,7 @@ export const viewport: Viewport = {
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kehoe Tech Dev",
+  title: "KehoeTech",
   description:
     "Portfolio of Eric Kehoe, PhD. Mathematician - Data Scientist - Full Stack Developer.",
   authors: [{ name: "Eric Kehoe", url: "https://kehoe-tech.dev" }],

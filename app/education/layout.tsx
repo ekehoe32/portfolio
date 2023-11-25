@@ -5,9 +5,9 @@ import clsx from "clsx";
 import Link from "next/link";
 
 const sections = [
-  { name: "Undergradate", href: "/math/undergraduate" },
-  { name: "Graduate", href: "/math/graduate" },
-  { name: "Postdoc", href: "/math/postdoc" },
+  { name: "Undergradate", href: "/education/undergraduate" },
+  { name: "Graduate", href: "/education/graduate" },
+  { name: "Postdoc", href: "/education/postdoc" },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {

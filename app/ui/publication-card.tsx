@@ -21,7 +21,7 @@ export default function PublicationCard({
   alt,
 }: PublicationCardProps) {
   return (
-    <div className="card lg:card-side bg-base-200 shadow-xl">
+    <div className="card lg:card-side bg-secondary text-base-200 shadow-xl">
       {/* <figure className="relative w-full h-full">
         <Image
           className="object-fit w-full h-full"
