@@ -9,6 +9,7 @@ export default function Home() {
             src="/background.webp"
             alt="Background image of a black cat on a computer."
             className="object-contain rounded-lg shadow-2xl"
+            priority
           />
         </div>
         <div>
