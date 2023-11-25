@@ -129,7 +129,7 @@ export async function fetchPublicationDetails(section: string) {
         ],
         university: "University of Colorado, Pattern Analysis Lab",
         abstract:
-          "We present two algorithms for estimating chemical concentrations from compressed hyperspectral images; the first uses matched filtering and ℓ1 regularization, while the second employs a fixed-resolution subspace in the 2D Haar wavelet domain. These algorithms, tested on both synthetic and real infrared data, match traditional methods in detection performance but are more efficient in memory and computation, effective even at lower resolutions.",
+          "Introduced two algorithms for estimating chemical concentrations from compressed hyperspectral images, demonstrating efficiency and comparable performance to traditional methods on various infrared data sets.",
         href: "https://spie.org/Publications/Proceedings/Paper/10.1117/12.2605288?SSO=1",
         src: "/math/postdoc-publication-image-3.png",
         alt: "SSVM classifer on test data.",
@@ -150,7 +150,7 @@ export async function fetchPublicationDetails(section: string) {
         ],
         university: "University of Colorado, Pattern Analysis Lab",
         abstract:
-          "We developed a compressive sensing hyperspectral imager for early detection of chemical vapors, utilizing a single-pixel design with a digital micromirror device and a Fabry-Perot filter. This system efficiently processes and reconstructs data, detects chemical plumes in varying backgrounds, and can operate directly in compressed space for enhanced search and confirmation efficiency.",
+          "We developed a single-pixel hyperspectral imager using a digital micromirror and Fabry-Perot filter for early chemical vapor detection. It processes and reconstructs data efficiently, detecting chemical plumes and operating effectively in compressed space.",
         href: "https://spie.org/Publications/Proceedings/Paper/10.1117/12.2618932",
         src: "/math/postdoc-publication-image-3.png",
         alt: "SSVM classifer on test data.",
