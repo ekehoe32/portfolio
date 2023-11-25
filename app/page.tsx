@@ -4,14 +4,13 @@ export default function Home() {
   return (
     <main className="hero min-h-screen bg-base-100">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="w-full md:w-1/2 lg:w-1/3">
+        <div className="relative w-full md:w-1/2 lg:w-1/3">
           <Image
             src="/background.png"
             alt="Background image of a black cat on a computer."
-            className="rounded-lg shadow-2xl"
+            className="object-contain rounded-lg shadow-2xl"
             width={500}
             height={500}
-            layout="responsive"
           />
         </div>
         <div>
@@ -28,7 +27,7 @@ export default function Home() {
               advanced computational techniques with practical application
               development.
             </p>
-            <div className="font-semibold text-right text-accent mt-0">
+            <div className="font-semibold text-right mt-0">
               &mdash; Eric Kehoe, PhD
             </div>
           </article>
