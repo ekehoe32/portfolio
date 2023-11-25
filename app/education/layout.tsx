@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <main className="min-h-screen p-4">
-      <div className="text-sm lg:text-base breadcrumbs max-w-xs pb-6">
+      <div className="text-sm md:text-base lg:text-lg breadcrumbs max-w-xs pb-6">
         <ul>
           {sections.map((section) => (
             <li key={`math-${changeCase.kebabCase(section.name)}-link`}>
