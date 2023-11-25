@@ -34,7 +34,7 @@ export default function PublicationCard({
       <div className="card-body w-fit">
         <h2 className="card-title">{name}</h2>
         <div>
-          <p className="font-light">{authors.join(", ")}</p>
+          <p className="font-light text-sm">{authors.join(", ")}</p>
         </div>
         <hr className="my-2 border-accent" />
         {/* <p className="font-light">{university}</p> */}
