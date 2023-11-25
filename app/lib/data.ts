@@ -108,6 +108,46 @@ export async function fetchMathSectionData(section: string) {
           alt: "SSVM classifer on test data.",
         },
         {
+          name: "Estimating chemical concentrations from compressed hyperspectral images",
+          authors: [
+            "Eric R. Kehoe",
+            "Michael Kirby",
+            "Chris Peterson",
+            "Louis Scharf",
+            "Julia R. Dupuis",
+            "John P. Dixon",
+            "Martin R. Anguita",
+            "Stephanie M. Craig",
+          ],
+          university: "University of Colorado, Pattern Analysis Lab",
+          abstract:
+            "In this paper, we introduce two algorithms to estimate chemical concentrations from compressed hyperspectral image (HSI) measurements. The first algorithm employs matched filtering and ℓ1 regularization for direct concentration image extraction from compressed data. The second algorithm uses a fixed-resolution subspace in the 2D Haar wavelet domain for image reconstruction at a macro-pixel resolution. Applied to synthetic and real long-wave infrared HSI data sets, our methods demonstrate comparable detection performance to traditional methods but with reduced memory and computational demands, maintaining effectiveness even at lower resolutions.",
+          href: "https://spie.org/Publications/Proceedings/Paper/10.1117/12.2605288?SSO=1",
+          src: "/math/postdoc-publication-image-3.png",
+          alt: "SSVM classifer on test data.",
+        },
+        {
+          name: "Compressive Sensing Hyperspectral Imager in the LWIR for Chemical Plume Detection",
+          authors: [
+            "Stephanie M. Craig",
+            "Julia R. Dupuis",
+            "John P. Dixon",
+            "Martín Anguita",
+            "David Mansur",
+            "S. Chase Buchanan",
+            "Eric R. Kehoe",
+            "Chris Peterson",
+            "Louis Scharf",
+            "Michael M. Kirby",
+          ],
+          university: "University of Colorado, Pattern Analysis Lab",
+          abstract:
+            "We developed an environmentally hardened compressive sensing hyperspectral imager (CS-HSI) for early warning of chemical vapor plumes in the long-wave infrared spectrum. This cost-effective, single-pixel system uses a digital micromirror device and a Fabry-Perot tunable filter for spatial encoding and spectral resolution of compressed data. The CS processing module reconstructs spatially compressed spectral data, while an automated target recognition algorithm detects chemical plumes against dynamic backgrounds. Additionally, the system can generate detection products directly in compressed space, enhancing efficiency and enabling effective search and confirm operational modes.",
+          href: "https://spie.org/Publications/Proceedings/Paper/10.1117/12.2605288?SSO=1",
+          src: "/math/postdoc-publication-image-3.png",
+          alt: "SSVM classifer on test data.",
+        },
+        {
           name: "Pathway expression analysis",
           authors: [
             "Nathan Mankovich",
