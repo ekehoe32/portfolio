@@ -3,7 +3,8 @@ import CubeScene from "@/app/ui/cube-scene";
 import Link from "next/link";
 import * as changeCase from "change-case";
 import Image from "next/image";
-import { useState } from "react";
+import { usePathname, useSearchParams, useRouter } from "next/navigation";
+import clsx from "clsx";
 
 type NavbarProps = {
   children: React.ReactNode;
@@ -19,7 +20,21 @@ const links = [
 ];
 
 export default function Navbar({ children }: NavbarProps) {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+  function toggleSidebar() {
+    const params = new URLSearchParams(searchParams);
+
+    if (params.get("sidebar")) {
+      params.delete("sidebar");
+    } else {
+      params.set("sidebar", "open");
+    }
+
+    router.replace(`${pathname}?${params.toString()}`);
+  }
 
   return (
     <div className="drawer">
@@ -27,8 +42,8 @@ export default function Navbar({ children }: NavbarProps) {
         id="navbar-drawer"
         type="checkbox"
         className="drawer-toggle"
-        onChange={() => setSidebarOpen(!sidebarOpen)}
-        checked={sidebarOpen}
+        onChange={toggleSidebar}
+        checked={searchParams.get("sidebar") ? true : false}
       />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
@@ -59,7 +74,9 @@ export default function Navbar({ children }: NavbarProps) {
               {links.map((link) => (
                 <li key={`link-${changeCase.kebabCase(link.name)}`}>
                   <Link
-                    onClick={() => setSidebarOpen(!sidebarOpen)}
+                    className={clsx({
+                      "text-white": pathname === link.href,
+                    })}
                     href={link.href}
                   >
                     {link.name}
@@ -81,7 +98,9 @@ export default function Navbar({ children }: NavbarProps) {
           {links.map((link) => (
             <li key={`link-${changeCase.kebabCase(link.name)}`}>
               <Link
-                onClick={() => setSidebarOpen(!sidebarOpen)}
+                className={clsx({
+                  "text-white": pathname === link.href,
+                })}
                 href={link.href}
               >
                 {link.name}
