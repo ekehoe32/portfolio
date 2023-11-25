@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { Viewport } from "next";
-import Navbar from "./ui/navbar";
-import Footer from "./ui/footer";
+import Navbar from "@/app/ui/navbar";
+import Footer from "@/app/ui/footer";
 
 export const viewport: Viewport = {
   width: "device-width",

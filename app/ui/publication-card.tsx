@@ -24,16 +24,18 @@ export default function PublicationCard({
     <div className="card lg:card-side bg-base-200 shadow-xl">
       <figure className="relative w-full h-full">
         <Image
-          className="lg:object-cover h-full"
+          className="object-fit w-full h-full"
           src={src}
           alt={alt}
-          width={500}
-          height={500}
+          width={388}
+          height={556}
         />
       </figure>
-      <div className="card-body w-full">
+      <div className="card-body w-fit">
         <h2 className="card-title">{name}</h2>
-        <p className="font-light">{authors.join(", ")}</p>
+        <div>
+          <p className="font-light">{authors.join(", ")}</p>
+        </div>
         {/* <p className="font-light">{university}</p> */}
         <p>{abstract}</p>
         <div className="card-actions justify-end">

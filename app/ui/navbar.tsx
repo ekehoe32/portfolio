@@ -12,7 +12,7 @@ type NavbarProps = {
 
 const links = [
   { name: "Home", href: "/" },
-  { name: "Math", href: "/math/early" },
+  { name: "Math", href: "/math/undergraduate" },
   { name: "Data Science", href: "/data-science" },
   { name: "Software Development", href: "/software-dev" },
   { name: "Music", href: "/music" },

@@ -20,7 +20,7 @@ export default async function Page({ params }: PageProps) {
         <h2>{sectionDetails.title}</h2>
         {sectionDetails.paragraph}
       </article>
-      <div className="lg:max-w-[810px]">
+      <div className="grid grid-cols-1 lg:max-w-[810px]">
         <div className="carousel w-full">
           {sectionDetails.publications.map((publication) => (
             <div
@@ -39,7 +39,7 @@ export default async function Page({ params }: PageProps) {
               key={`${changeCase.kebabCase(publication.name)}-link`}
               href={`#${changeCase.kebabCase(publication.name)}`}
             >
-              {index}
+              {index + 1}
             </Link>
           ))}
         </div>
