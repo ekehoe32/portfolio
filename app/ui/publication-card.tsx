@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 
 type PublicationCardProps = {
@@ -32,23 +32,18 @@ export default function PublicationCard({
         />
       </figure> */}
       <div className="card-body w-fit">
-        <h2 className="card-title">{name}</h2>
+        <Link href={href} rel="noopener noreferrer" target="_blank">
+          <h2 className="card-title inline-block">
+            {name}{" "}
+            <ArrowTopRightOnSquareIcon className="inline w-4 text-accent pb-2" />
+          </h2>
+        </Link>
         <div>
           <p className="font-light text-sm">{authors.join(", ")}</p>
         </div>
         <hr className="my-2 border-accent" />
         {/* <p className="font-light">{university}</p> */}
         <p>{abstract}</p>
-        <div className="card-actions justify-end">
-          <Link
-            href={href}
-            rel="noopener noreferrer"
-            target="_blank"
-            className="btn btn-accent"
-          >
-            Check it out
-          </Link>
-        </div>
       </div>
     </div>
   );
