@@ -21,7 +21,7 @@ export default async function PublicationCarousel({
 
   return (
     <div className="grid grid-cols-1 w-full max-w-[800px]">
-      <div className="carousel max-w-full p-8 lg:p-16 space-x-4 rounded-box">
+      <div className="carousel carousel-center max-w-full p-8 lg:p-16 space-x-4 rounded-box">
         {publications.map((publication) => (
           <div
             id={changeCase.kebabCase(publication.name)}
