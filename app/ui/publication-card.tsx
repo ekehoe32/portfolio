@@ -22,7 +22,7 @@ export default function PublicationCard({
 }: PublicationCardProps) {
   return (
     <div className="card lg:card-side bg-base-200 shadow-xl">
-      <figure className="relative w-full h-full">
+      {/* <figure className="relative w-full h-full">
         <Image
           className="object-fit w-full h-full"
           src={src}
@@ -30,12 +30,13 @@ export default function PublicationCard({
           width={388}
           height={556}
         />
-      </figure>
+      </figure> */}
       <div className="card-body w-fit">
         <h2 className="card-title">{name}</h2>
         <div>
           <p className="font-light">{authors.join(", ")}</p>
         </div>
+        <hr className="my-2" />
         {/* <p className="font-light">{university}</p> */}
         <p>{abstract}</p>
         <div className="card-actions justify-end">
@@ -45,7 +46,7 @@ export default function PublicationCard({
             target="_blank"
             className="btn btn-accent"
           >
-            Read
+            Check it out
           </Link>
         </div>
       </div>
