@@ -15,9 +15,9 @@ export default function Footer() {
           />
         </Link>
         <p>
-          Kehoe Tech
+          KehoeTech
           <br />
-          Providing reliable tech since 2023
+          Copyright © 2023 - All right reserved
         </p>
       </aside>
       <nav>
