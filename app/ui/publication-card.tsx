@@ -43,7 +43,7 @@ export default function PublicationCard({
         </div>
         <hr className="my-2 border-accent" />
         {/* <p className="font-light">{university}</p> */}
-        <p>{abstract}</p>
+        <p className="text-sm lg:text-base">{abstract}</p>
       </div>
     </div>
   );
