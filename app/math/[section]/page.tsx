@@ -19,6 +19,7 @@ export default async function Page({ params }: PageProps) {
       <article className="prose lg:prose-xl">
         <h2>{sectionDetails.title}</h2>
         {sectionDetails.paragraph}
+        <h2 className="py-8">Related Works</h2>
       </article>
       <div className="grid grid-cols-1 lg:max-w-[810px]">
         <div className="carousel w-full">
