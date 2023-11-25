@@ -8,6 +8,8 @@ export default function Home() {
           <Image
             src="/background.webp"
             alt="Background image of a black cat on a computer."
+            width={500}
+            height={500}
             className="object-contain rounded-lg shadow-2xl"
             priority
           />
