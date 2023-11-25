@@ -143,7 +143,7 @@ export async function fetchMathSectionData(section: string) {
           university: "University of Colorado, Pattern Analysis Lab",
           abstract:
             "We developed an environmentally hardened compressive sensing hyperspectral imager (CS-HSI) for early warning of chemical vapor plumes in the long-wave infrared spectrum. This cost-effective, single-pixel system uses a digital micromirror device and a Fabry-Perot tunable filter for spatial encoding and spectral resolution of compressed data. The CS processing module reconstructs spatially compressed spectral data, while an automated target recognition algorithm detects chemical plumes against dynamic backgrounds. Additionally, the system can generate detection products directly in compressed space, enhancing efficiency and enabling effective search and confirm operational modes.",
-          href: "https://spie.org/Publications/Proceedings/Paper/10.1117/12.2605288?SSO=1",
+          href: "https://spie.org/Publications/Proceedings/Paper/10.1117/12.2618932",
           src: "/math/postdoc-publication-image-3.png",
           alt: "SSVM classifer on test data.",
         },
