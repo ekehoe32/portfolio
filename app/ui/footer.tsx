@@ -7,7 +7,7 @@ export default function Footer() {
       <aside>
         <Link href="/">
           <Image
-            src="/kehoe.png"
+            src="/kehoe.webp"
             width={100}
             height={100}
             alt="Kehoe logo."

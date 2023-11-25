@@ -62,7 +62,7 @@ export default function Navbar({ children }: NavbarProps) {
             <p className=" text-xl">KehoeTech</p>
             <Image
               className="w-6"
-              src="/kehoe.png"
+              src="/kehoe.webp"
               width={100}
               height={100}
               alt="kehoe logo"
