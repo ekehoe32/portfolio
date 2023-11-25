@@ -6,13 +6,7 @@ export default function Footer() {
     <footer className="footer p-10 bg-base-200">
       <aside>
         <Link href="/">
-          <Image
-            src="/kehoe.webp"
-            width={100}
-            height={100}
-            alt="Kehoe logo."
-            className="w-10"
-          />
+          <Image src="/kehoe.webp" alt="Kehoe logo." className="w-10" />
         </Link>
         <p>
           KehoeTech

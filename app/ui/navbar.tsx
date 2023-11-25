@@ -60,13 +60,7 @@ export default function Navbar({ children }: NavbarProps) {
 
           <Link className="flex-1 px-2 mx-2 gap-2" href="/">
             <p className=" text-xl">KehoeTech</p>
-            <Image
-              className="w-6"
-              src="/kehoe.webp"
-              width={100}
-              height={100}
-              alt="kehoe logo"
-            />
+            <Image className="w-6" src="/kehoe.webp" alt="kehoe logo" />
           </Link>
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal">
