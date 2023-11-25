@@ -1,13 +1,16 @@
+"use client";
 import CubeScene from "@/app/ui/cube-scene";
 import Link from "next/link";
 import * as changeCase from "change-case";
 import Image from "next/image";
+import { useState } from "react";
 
 type NavbarProps = {
   children: React.ReactNode;
 };
 
 const links = [
+  { name: "Home", href: "/" },
   { name: "Math", href: "/math" },
   { name: "Data Science", href: "/data-science" },
   { name: "Software Development", href: "/software-dev" },
@@ -16,15 +19,23 @@ const links = [
 ];
 
 export default function Navbar({ children }: NavbarProps) {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <div className="drawer">
-      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+      <input
+        id="navbar-drawer"
+        type="checkbox"
+        className="drawer-toggle"
+        onChange={() => setSidebarOpen(!sidebarOpen)}
+        checked={sidebarOpen}
+      />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
         <div className="w-full navbar bg-base-300">
           <div className="flex-none lg:hidden">
             <label
-              htmlFor="my-drawer-3"
+              htmlFor="navbar-drawer"
               aria-label="open sidebar"
               className="btn btn-square btn-ghost"
             >
@@ -47,7 +58,12 @@ export default function Navbar({ children }: NavbarProps) {
               {/* Navbar menu content here */}
               {links.map((link) => (
                 <li key={`link-${changeCase.kebabCase(link.name)}`}>
-                  <Link href={link.href}>{link.name}</Link>
+                  <Link
+                    onClick={() => setSidebarOpen(!sidebarOpen)}
+                    href={link.href}
+                  >
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -57,14 +73,19 @@ export default function Navbar({ children }: NavbarProps) {
       </div>
       <div className="drawer-side">
         <label
-          htmlFor="my-drawer-3"
+          htmlFor="navbar-drawer"
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
         <ul className="menu p-4 w-80 min-h-full bg-base-200">
           {links.map((link) => (
             <li key={`link-${changeCase.kebabCase(link.name)}`}>
-              <Link href={link.href}>{link.name}</Link>
+              <Link
+                onClick={() => setSidebarOpen(!sidebarOpen)}
+                href={link.href}
+              >
+                {link.name}
+              </Link>
             </li>
           ))}
         </ul>
