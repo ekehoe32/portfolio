@@ -3,19 +3,19 @@ export async function fetchEducationSectionDetails(section: string) {
     return {
       title: "Undergraduate",
       paragraph:
-        "During undergrad, at the University of Massachusetts: Lowell, I discovered a love for mathematics, particularly for proving relationships between things. My focus was in linear algebra, calculus, and differential equations. Later on I developed a great interest in differential geometry. My senior capstone delved into the oscillatory behavior of secondary-order non-homogeneous differential equations, generalizing the well-known discriminant.",
+        "At the University of Massachusetts: Lowell, I developed a passion for mathematics, especially for the art of proofs, focusing on linear algebra, calculus, and differential equations. My interest evolved towards differential geometry, culminating in a senior capstone that explored oscillatory behaviors in secondary-order non-homogeneous differential equations, extending the concept of the discriminant.",
     };
   } else if (section == "graduate") {
     return {
       title: "Graduate School",
       paragraph:
-        "In graduate school, at the University of New Hampshire, my focus centered around differential topology and geometry with a minor in computational fluid dynamics. My thesis work was an exploration into the field of metric geometry, specifically focusing on the classification of extreme points within the polytope of bounded-by-1 pseudometrics on a finite set. This study extended to characterizing the topology of the complex of ultrametrics and beginning the development of iterated cycle structures.",
+        "At the University of New Hampshire, my graduate studies in differential topology and geometry, along with a minor in computational fluid dynamics, led to a thesis focused on metric geometry. I concentrated on classifying extreme points in bounded-by-1 pseudometrics polytopes on finite sets, characterizing ultrametric complexes, and initiating iterated cycle structures development.",
     };
   } else if (section == "postdoc") {
     return {
       title: "Postdoc at the Pattern Analysis Lab",
       paragraph:
-        "For my postdoctoral research, I worked in Michael Kirby's Pattern Analysis Lab at Colorado State University. I developed machine learning algorithms and wrote high-performance distributed software libraries for executing algorithms on large datasets. Many of my projects involved the analysis of high-dimensional but sample-sparse data sets, such as transcriptomics and metabolomics data. My work encompassed predictive modeling, classification, anomaly detection, feature selection, and pathway enrichment. Additionally, I did work in hyperspectral imaging, developing techniques for compressed sensing, multi-resolution detection, and image reconstruction; leveraging custom GPU kernels.",
+        "During my postdoc at Colorado State University in Michael Kirby's Pattern Analysis Lab, I focused on developing machine learning algorithms and high-performance distributed computing for large data sets, particularly in transcriptomics and metabolomics. My work involved predictive modeling, classification, anomaly detection, and hyperspectral imaging techniques, including compressed sensing and image reconstruction, with an emphasis on GPU computing.",
     };
   }
 }
