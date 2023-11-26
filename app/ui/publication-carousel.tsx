@@ -35,6 +35,7 @@ export default async function PublicationCarousel({
       <div className="hidden justify-center w-full py-2 gap-2 lg:flex">
         {publications.map((publication, index) => (
           <Link
+            aria-label={`Publication ${index + 1}`}
             className="btn btn-xs"
             key={`${changeCase.kebabCase(publication.name)}-link`}
             href={`#${changeCase.kebabCase(publication.name)}`}

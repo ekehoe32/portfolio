@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="footer p-10 bg-base-200">
       <aside>
-        <Link href="/">
+        <Link aria-label="Home page" href="/">
           <Image
             src="/kehoe.webp"
             width={40}
@@ -23,7 +23,10 @@ export default function Footer() {
       <nav>
         <header className="footer-title">Social</header>
         <div className="grid grid-flow-col gap-4">
-          <Link href="https://www.linkedin.com/in/eric-kehoe-969182180/">
+          <Link
+            aria-label="Eric's LinkedIn page"
+            href="https://www.linkedin.com/in/eric-kehoe-969182180/"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

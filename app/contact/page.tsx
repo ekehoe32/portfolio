@@ -8,7 +8,10 @@ export default function Page() {
           <h2>Contact</h2>
           <p className="break-words">
             Send me an email at{" "}
-            <Link href="mailto:eric@kehoe-tech.dev?subject=App development for...">
+            <Link
+              aria-label="Email Eric for a software development project"
+              href="mailto:eric@kehoe-tech.dev?subject=App development for..."
+            >
               eric@kehoe-tech.dev
             </Link>{" "}
             for your next software project!

@@ -21,6 +21,8 @@ export default function Error({
       <div className="flex gap-4">
         <button
           className="btn btn-primary"
+          aria-label="Try again"
+          aria-live="polite"
           onClick={
             // Attempt to recover by trying to re-render the segment
             () => reset()
@@ -28,7 +30,12 @@ export default function Error({
         >
           Try again
         </button>
-        <Link className="btn btn-neutral" href="/">
+        <Link
+          aria-label="Home page"
+          aria-live="polite"
+          className="btn btn-neutral"
+          href="/"
+        >
           Go home
         </Link>
       </div>

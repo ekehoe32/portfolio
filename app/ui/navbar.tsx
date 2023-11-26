@@ -58,7 +58,11 @@ export default function Navbar({ children }: NavbarProps) {
             </label>
           </div>
 
-          <Link className="flex-1 px-2 mx-2 gap-2" href="/">
+          <Link
+            aria-label="Home page"
+            className="flex-1 px-2 mx-2 gap-2"
+            href="/"
+          >
             <p className=" text-xl">KehoeTech</p>
             <Image
               className="w-6"
@@ -74,6 +78,7 @@ export default function Navbar({ children }: NavbarProps) {
               {links.map((link) => (
                 <li key={`link-${changeCase.kebabCase(link.name)}`}>
                   <Link
+                    aria-label={`${link.name} page`}
                     className={clsx({
                       "text-white": pathname === link.href,
                     })}
@@ -98,6 +103,7 @@ export default function Navbar({ children }: NavbarProps) {
           {links.map((link) => (
             <li key={`link-${changeCase.kebabCase(link.name)}`}>
               <Link
+                aria-label={`${link.name} page`}
                 className={clsx({
                   "text-white": pathname === link.href,
                 })}

@@ -32,7 +32,12 @@ export default function PublicationCard({
         />
       </figure> */}
       <div className="card-body w-fit">
-        <Link href={href} rel="noopener noreferrer" target="_blank">
+        <Link
+          aria-label={`${name} publication source`}
+          href={href}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <h2 className="card-title inline-block">
             {name}{" "}
             <ArrowTopRightOnSquareIcon className="inline w-4 text-accent pb-2" />

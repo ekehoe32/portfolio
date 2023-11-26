@@ -20,6 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {sections.map((section) => (
             <li key={`math-${changeCase.kebabCase(section.name)}-link`}>
               <Link
+                aria-label={`${section.name} education section`}
                 className={clsx({ "text-white": section.href === pathname })}
                 href={section.href}
               >
