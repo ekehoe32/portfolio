@@ -33,7 +33,7 @@ export default function Home() {
             </div>
           </article>
 
-          <button className="btn btn-primary">Explore</button>
+          {/* <button className="btn btn-primary">Explore</button> */}
         </div>
       </div>
     </main>
